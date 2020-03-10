@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'ClassiqueSaigon';
+	src: url('../fonts/ClassiqueSaigon.eot');
+	src: url('../fonts/ClassiqueSaigon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ClassiqueSaigon.woff2') format('woff2'),
+		url('../fonts/ClassiqueSaigon.woff') format('woff'),
+		url('../fonts/ClassiqueSaigon.ttf') format('truetype'),
+		url('../fonts/ClassiqueSaigon.svg#ClassiqueSaigon') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+body, html {
+	font-size: 16px;
+	color: #333333;
+	font-weight: 400;
+	font-family: 'ClassiqueSaigon';
+	background-color: #FBF3F2;
+}
+
+.wrapper {
+	padding: 1em;
+}
+
+a {
+	text-decoration:  none;
+	color: #000000;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	.navbar-list {
+		display: flex;
+		padding: 0;
+		margin-right: auto;
+	}
+
+	.navbar-link {
+		padding-top: 1em;
+		display: block;
+		margin-right: 2em;
+		text-decoration: none;
+		font-size: 20px;
+	}
+}
+
+h1 {
+	font-size: 3em;
+	margin-top: 1.5em;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 2em 2em 2em 0;
+	font-size: 1.4em;
+}
+
+img {
+	width: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.transition-col-list {
+	display: flex;
+	position: absolute;
+	z-index: 10;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	pointer-events: none;
+
+	.transition-col-item {
+		transform: scale(0);
+		background-color: #fff;
+		width: 20%;
+	}
+}
+
+@media screen and (min-width: 740px) { 
+	h1 {
+		margin-bottom: 1em;
+	}
+	main {
+		display: flex;
+		margin-top: 3em;
+		position: relative;
+		z-index: 3;
+	}
+
+	.wrapper {
+		max-width: 950px;
+		margin: 0 auto;
+
+		.left {
+			padding-right: 2em;
+			margin-right: auto;
+			position: relative;
+		}
+
+		img {
+			width: 400px;
+			object-fit: cover;
+		}
+
+		.cta-button {
+			padding: 1em;
+			background-color: #fff;
+			position: absolute;
+			z-index: 21;
+			width: 80%;
+			animation-fill-mode: initial;
+			text-align: center;
+		}
+	}
+ }
+
+ @media screen and (min-width: 850px) {  }

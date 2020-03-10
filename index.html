@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Home | Page transition</title>
+</head>
+
+<body data-barba="wrapper">
+	<ul class="transition-col-list">
+		<li class="transition-col-item"></li>
+		<li class="transition-col-item"></li>
+		<li class="transition-col-item"></li>
+		<li class="transition-col-item"></li>
+		<li class="transition-col-item"></li>
+	</ul>
+	<div class="wrapper">
+		<header>
+			<nav class="navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item">
+						<a class="navbar-link" href="index.html">Home</a>
+					</li>
+					<li class="navbar-item">
+						<a class="navbar-link" href="about.html">About</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main data-barba="container" data-barba-namespace="home">
+			<div class="left">
+				<h1>Sai Gon 1954</h1>
+				<a href="about.html" class="cta-button">Take me there</a>
+			</div>
+			<img src="./img/classic_car_4.jpeg" alt="Sai Gon">
+		</main>
+	</div>
+	<script src="./js/barba.umd.js"></script>
+	<script src="./js/gsap.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
